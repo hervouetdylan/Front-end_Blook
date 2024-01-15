@@ -8,21 +8,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 9vh;
-    background-color: #1b1b1b;
-    color: white;
-    margin-bottom: 3%;
-}
-ul {
-    list-style: none;
-    margin-left: 40%;
     min-height: 8vh;
     background-color: #1b1b1b;
     color: white;
 }
 ul {
     list-style: none;
-    margin-left: 50%;
+    margin-left: 40%;
 }
 li {
     display: inline-block;
