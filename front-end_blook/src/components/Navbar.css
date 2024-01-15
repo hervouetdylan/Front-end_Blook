@@ -8,19 +8,13 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 9vh;
+    min-height: 8vh;
     background-color: #1b1b1b;
     color: white;
 }
-.nameSite {
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-}
 ul {
     list-style: none;
-    margin-left: 8%;
+    margin-left: 50%;
 }
 li {
     display: inline-block;
