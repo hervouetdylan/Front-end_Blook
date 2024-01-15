@@ -12,9 +12,15 @@ nav {
     background-color: #1b1b1b;
     color: white;
 }
+.nameSite {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
 ul {
     list-style: none;
-    margin-left: 40%;
+    margin-left: 8%;
 }
 li {
     display: inline-block;
