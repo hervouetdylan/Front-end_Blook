@@ -12,10 +12,9 @@ function Navbar() {
     return (
         <nav>
             <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Catégorie</a></li>
-                <li><a href="">À propos</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Recettes</a></li>
+                <li><a href="">Login</a></li>
             </ul>
             <input
                 type="text"
