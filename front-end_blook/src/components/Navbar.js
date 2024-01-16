@@ -11,7 +11,6 @@ function Navbar() {
 
     return (
         <nav>
-            <h1 className="nameSite">Blook</h1>
             <ul>
                 <li><a href="">Accueil</a></li>
                 <li><a href="">Catégorie</a></li>
