@@ -20,7 +20,7 @@
 .card:hover {
     transform: scale(1.03);
 }
-img {
+.img_list_recette {
     width: 100%;
     height: 40vh;
     object-fit: cover;
