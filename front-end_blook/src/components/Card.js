@@ -22,23 +22,6 @@ let recetteLienImg = [
     "https://wordpress.potagercity.fr/wp-content/uploads/2019/01/RECETTE_tarte_myrtille.jpg",
 ]
 
-// function fetchData() {
-//     fetch('https://api.example.com/data')
-//         .then(response => response.json())
-//         .then(data => {
-//             // Faites quelque chose avec les données reçues
-//             console.log(data);
-//         })
-//         .catch(error => {
-//             // Gérez les erreurs
-//             console.error(error);
-//         });
-// }
-
-// fetchData();
-
- 
-
 function Card() {
     return (
         <div className="display_cards">
