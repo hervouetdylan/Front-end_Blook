@@ -1,6 +1,6 @@
 import "./Card.css";
-//import Header from "./components/Navbar";
-// import { Link } from 'react-router-dom';
+import Header from "./Navbar";
+import { Link } from 'react-router-dom';
 
 let recetteName = [
     "Cookies",
@@ -43,16 +43,19 @@ let recetteLienImg = [
 
 function Card() {
     return (
-        <div className="display_cards">
-            {recetteName.map((name, index) => (
-                <div className="card" key={index}>
-                    {/* <Link to='/recette'> */}
-                        <img src={recetteLienImg[index]} alt="" />
-                    {/* </Link> */}
-                    <h2 className="title_recette">{name}</h2>
-                    <p>{recetteDescription}</p>
-                </div>
-            ))}
+        <div>
+            <Header />
+            <div className="display_cards">
+                {recetteName.map((name, index) => (
+                    <div className="card" key={index}>
+                        <Link to='/recette'>
+                            <img className="img_list_recette" src={recetteLienImg[index]} alt="" />
+                        </Link>
+                        <h2 className="title_recette">{name}</h2>
+                        <p>{recetteDescription}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
