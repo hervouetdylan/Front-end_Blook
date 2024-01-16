@@ -1,13 +1,14 @@
 import './App.css';
-import Header from "./components/Navbar";
 import Card from "./components/Card";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Card />
-    </div>
+const App = () => {
+  return (<>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/home" component={Card} />
+      </Routes>
+    </BrowserRouter></>
   );
 }
 

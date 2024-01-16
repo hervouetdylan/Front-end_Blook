@@ -1,4 +1,6 @@
 import "./Card.css";
+import Header from "./components/Navbar";
+// import { Link } from 'react-router-dom';
 
 let recetteName = [
     "Cookies",
@@ -22,14 +24,32 @@ let recetteLienImg = [
     "https://wordpress.potagercity.fr/wp-content/uploads/2019/01/RECETTE_tarte_myrtille.jpg",
 ]
 
+// function fetchData() {
+//     fetch('https://api.example.com/data')
+//         .then(response => response.json())
+//         .then(data => {
+//             // Faites quelque chose avec les données reçues
+//             console.log(data);
+//         })
+//         .catch(error => {
+//             // Gérez les erreurs
+//             console.error(error);
+//         });
+// }
+
+// fetchData();
+
+ 
+
 function Card() {
     return (
         <div className="display_cards">
+            <Header />
             {recetteName.map((name, index) => (
                 <div className="card" key={index}>
-                    <a href="">
+                    {/* <Link to='/recette'> */}
                         <img src={recetteLienImg[index]} alt="" />
-                    </a>
+                    {/* </Link> */}
                     <h2 className="title_recette">{name}</h2>
                     <p>{recetteDescription}</p>
                 </div>
