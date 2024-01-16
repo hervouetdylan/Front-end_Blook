@@ -6,7 +6,7 @@ const App = () => {
   return (<>
     <BrowserRouter>
       <Routes>
-        <Route path="/home" component={Card} />
+        <Route path="/home" element={<Card />} />
       </Routes>
     </BrowserRouter></>
   );

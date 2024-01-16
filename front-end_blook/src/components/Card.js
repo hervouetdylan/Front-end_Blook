@@ -1,5 +1,5 @@
 import "./Card.css";
-import Header from "./components/Navbar";
+//import Header from "./components/Navbar";
 // import { Link } from 'react-router-dom';
 
 let recetteName = [
@@ -44,7 +44,6 @@ let recetteLienImg = [
 function Card() {
     return (
         <div className="display_cards">
-            <Header />
             {recetteName.map((name, index) => (
                 <div className="card" key={index}>
                     {/* <Link to='/recette'> */}
