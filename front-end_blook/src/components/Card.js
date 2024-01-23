@@ -1,4 +1,6 @@
 import "./Card.css";
+import Header from "./Navbar";
+import { Link } from 'react-router-dom';
 
 let recetteName = [
     "Cookies",
@@ -22,36 +24,39 @@ let recetteLienImg = [
     "https://wordpress.potagercity.fr/wp-content/uploads/2019/01/RECETTE_tarte_myrtille.jpg",
 ]
 
-function fetchData() {
-    fetch('https://api.example.com/data')
-        .then(response => response.json())
-        .then(data => {
-            // Faites quelque chose avec les données reçues
-            console.log(data);
-        })
-        .catch(error => {
-            // Gérez les erreurs
-            console.error(error);
-        });
-}
+// function fetchData() {
+//     fetch('https://api.example.com/data')
+//         .then(response => response.json())
+//         .then(data => {
+//             // Faites quelque chose avec les données reçues
+//             console.log(data);
+//         })
+//         .catch(error => {
+//             // Gérez les erreurs
+//             console.error(error);
+//         });
+// }
 
-fetchData();
+// fetchData();
 
  
 
 function Card() {
     return (
-        <div className="display_cards">
-            {recetteName.map((name, index) => (
-                <div className="card" key={index}>
-                    <a href="">
-                        <img src={recetteLienImg[index]} alt="" />
-                    </a>
-                    <h2 className="title_recette">{name}</h2>
-                    <p>{recetteDescription}</p>
-                </div>
-            ))}
-        </div>
+        <>
+            <Header />
+            <div className="display_cards">
+                {recetteName.map((name, index) => (
+                    <div className="card" key={index}>
+                        <Link to='/recette'>
+                            <img className="img_list_recette" src={recetteLienImg[index]} alt="" />
+                        </Link>
+                        <h2 className="title_recette">{name}</h2>
+                        <p>{recetteDescription}</p>
+                    </div>
+                ))}
+            </div>
+        </>
     );
 }
 

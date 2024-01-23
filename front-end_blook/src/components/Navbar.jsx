@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+// import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -11,12 +12,13 @@ function Navbar() {
 
     return (
         <nav>
-            <h1 className="nameSite">Blook</h1>
             <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="">Catégorie</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Login</a></li>
+                <li>
+                    {/* <Link to="/">Accueil</Link> */}
+                </li>
+                {/* <li><a href="">Catégorie</a></li>
+                <li><a href="">À propos</a></li>
+                <li><a href="">Contact</a></li> */}
             </ul>
             <input
                 type="text"
