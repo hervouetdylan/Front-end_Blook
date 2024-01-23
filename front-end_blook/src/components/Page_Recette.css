@@ -4,17 +4,46 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    background-color: lightgray;
+}
+
 .display_recette {
+    padding: 2%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+}
+
+.title_page_recette {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+
 }
 
 .img_recette {
-    width: 100%;
+    width: 50%;
     height: 40vh;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.list_ingrédients{
+    list-style-type: none;
+    margin: 0;
+}
+
+.list_étapes {
+    list-style-type: none;
+    margin: 0;
 }

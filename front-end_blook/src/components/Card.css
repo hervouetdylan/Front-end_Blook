@@ -5,7 +5,11 @@
     justify-content: center;
     align-items: center;
 }
+body {
+    background-color: lightgray;
+}
 .card {
+    background-color: white;
     width: 22%;
     height: 100%;
     border-radius: 20px;
