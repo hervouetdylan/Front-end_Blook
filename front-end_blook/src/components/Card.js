@@ -43,7 +43,7 @@ let recetteLienImg = [
 
 function Card() {
     return (
-        <>
+        <div>
             <Header />
             <div className="display_cards">
                 {recetteName.map((name, index) => (
@@ -56,7 +56,7 @@ function Card() {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     );
 }
 
